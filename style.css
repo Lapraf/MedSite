@@ -68,6 +68,7 @@ a{
     font-size: 30px;
     height:100%;
     width: 100%;
+    border-radius: 30px;
 }
 
 .hd_consult:hover{
@@ -94,6 +95,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 50px;
 }
 
 .menu_name{
@@ -104,6 +106,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 50px;
 }
 
 .menu_name:hover{
