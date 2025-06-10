@@ -98,7 +98,7 @@ a{
     border-radius: 50px;
 }
 
-.menu_name{
+.name_button{
     display: flex;
     width: 100%;
     height: 100%;
@@ -109,7 +109,34 @@ a{
     border-radius: 50px;
 }
 
-.menu_name:hover{
+.name_button:hover{
+    border-radius: 50px;
+    background-color: #dde2e3;
+    text-decoration: underline;
+}
+
+.hd_about_menu{
+    width: 28.703vw;
+    height: 4.88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.about_button{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.about_button:hover{
     border-radius: 50px;
     background-color: #dde2e3;
     text-decoration: underline;
