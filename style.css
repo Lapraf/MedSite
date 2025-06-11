@@ -2,7 +2,7 @@ body{
     background-color: #4EB69F;
 }
 
-a, p{
+a, p, li{
     font-family: 'Manrope';
 }
 
@@ -10,6 +10,8 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+/* HEADER */
 
 .header{
     display:flex;
@@ -143,12 +145,15 @@ a{
     text-decoration: underline;
 }
 
+/* MAIN */
+
 .index_main{
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 4.88vh;
     justify-self: center;
-    justify-content: center;
+    align-items: center;
 }
 
 .photo_info{
@@ -166,7 +171,36 @@ a{
     height:450px;
     width: 450px;
     border-radius: 50%;
-    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-image: url(assets/mm.jpg);
+}
+
+.list_gen_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.list_gen_text{
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 2rem;
+}
+
+.list_consult_ref{
+    line-height: 1.8;
+    font-size: 2rem;
+}
+
+.list_consult_ref:hover{
+    background-color: #9a905f;
+    border-radius: 15px;
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
 }
 
 .photo_text{
@@ -176,6 +210,20 @@ a{
     border-radius: 50px;
     background-color: #94DDD7;
 }
+
+
+.main_aboutme{
+    display: flex;
+    width: 86.11vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: white;
+}
+
+
+
+/* ADAPTATION */
 
 @media (min-width: 2560px) {
     .menu_name{
@@ -189,7 +237,29 @@ a{
     .text_spec{
         font-size: 40px;
     }
+
+    .photo_info{
+        gap: 6vw;
+    }
+    .photo_text{
+        height: 500px;
+    }
     
+    .photo{
+        height: 500px;
+        width: 500px;
+    }
+    
+    .list_gen_text, .list_consult_ref{
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .list_gen_text, .list_consult_ref{
+    font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -206,17 +276,93 @@ a{
     width: 481.77px;
     height: 350px;
     }
+    .list_gen_text, .list_consult_ref{
+    font-size: 1rem;
+    }
 }
 
-@media (max-width: 425px) {
-    
+@media (max-width: 768px){
+
+    .list_gen_info{
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .photo_info{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .photo_text{
+        height: auto;
+    }
+
 }
 
+@media (max-width: 711px){
+    .hd_block_consult_spec{
+    border-radius: 50px;
+    }
 
-@media (max-width: 375px) {
-    
+    .hd_consult_spec{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        height: 80%;
+    }
+
+    .hd_specialization, .hd_consult{
+    display: flex;
+    width: 86.11vw;
+    height: 70%;
+    }
+
+    .text_spec, .text_consult{
+        font-size: 20px;
+        overflow: hidden;
+    }
+
+    .photo_info{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .hd_ref_name{
+        width: 50%;
+    }
+
+    .name_button{
+        font-size: 15px;
+    }
+
+    .hd_about_menu{
+        width: 50%;
+    }
+
+    .about_button{
+        font-size: 15px;
+    }
+    .photo_text{
+        width: auto; 
+        height: auto;
+    }
+    .list_gen_text, .list_consult_ref{
+        font-size: 15px;
+    }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
+    .photo{
+        height: 200px;
+        width: 200px;
+    }
     
 }
