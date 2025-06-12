@@ -265,6 +265,13 @@ a{
     }
 }
 
+@media (max-width: 1620px) {
+    .list_gen_text, .list_consult_ref{
+        font-size: 25px;
+    }
+    
+}
+
 
 @media (max-width: 1440px) {
     .list_gen_text, .list_consult_ref{
@@ -289,6 +296,13 @@ a{
     .list_gen_text, .list_consult_ref{
         font-size: 1rem;
     }
+}
+
+@media (max-width: 970px) {
+    .name_button, .about_button{
+        font-size: 15px;
+    }
+    
 }
 
 @media (max-width: 768px){
@@ -377,6 +391,9 @@ a{
 }
 
 @media (max-width: 425px) {
+    .name_button, .about_button{
+        font-size: 14px;
+    }
     .hd_specialization, .hd_consult{
         width: 80vw;
     }
