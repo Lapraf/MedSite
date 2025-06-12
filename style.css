@@ -162,7 +162,7 @@ a{
     flex-direction: row;
     width: 86.11vw;
     height: 450px;
-    align-items: flex-start;
+    align-items: center;
     gap: 50px;
     justify-content: center;
 }
@@ -180,7 +180,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px;
 }
 
 .list_gen_text{
@@ -204,9 +203,13 @@ a{
 }
 
 .photo_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 51.388vw;
     height: 450px;
-    margin-left: 0px;
     border-radius: 50px;
     background-color: #94DDD7;
 }
@@ -283,6 +286,14 @@ a{
 
 @media (max-width: 768px){
 
+    .name_button{
+        font-size: 15px;
+    }
+
+    .about_button{
+        font-size: 15px;
+    }
+
     .list_gen_info{
         display: flex;
         margin: 20px;
@@ -357,6 +368,13 @@ a{
     .list_gen_text, .list_consult_ref{
         font-size: 15px;
     }
+}
+
+@media (max-width: 425px) {
+    .hd_specialization, .hd_consult{
+        width: 80vw;
+    }
+    
 }
 
 @media (max-width: 360px) {
