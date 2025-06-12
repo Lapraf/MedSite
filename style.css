@@ -60,7 +60,14 @@ a{
 }
 
 .text_spec{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
+    height:100%;
+    width: 100%;
+    border-radius: 30px;
 }
 
 .text_consult{
@@ -261,7 +268,7 @@ a{
 
 @media (max-width: 1440px) {
     .list_gen_text, .list_consult_ref{
-    font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -276,11 +283,11 @@ a{
     }
 
     .photo_text{
-    width: 481.77px;
-    height: 350px;
+        width: 481.77px;
+        height: 350px;
     }
     .list_gen_text, .list_consult_ref{
-    font-size: 1rem;
+        font-size: 1rem;
     }
 }
 
@@ -317,7 +324,7 @@ a{
 
 @media (max-width: 711px){
     .hd_block_consult_spec{
-    border-radius: 50px;
+        border-radius: 50px;
     }
 
     .hd_consult_spec{
@@ -329,14 +336,13 @@ a{
     }
 
     .hd_specialization, .hd_consult{
-    display: flex;
-    width: 86.11vw;
-    height: 70%;
+        display: flex;
+        width: 86.11vw;
+        height: 70%;
     }
 
     .text_spec, .text_consult{
         font-size: 20px;
-        overflow: hidden;
     }
 
     .photo_info{
