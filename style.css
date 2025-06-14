@@ -1,412 +1,127 @@
-body{
-    background-color: #F9FAFB;
+body {
+      font-family: 'Manrope', sans-serif;
+      color: #1F2937;
+      background-color: #F9FAFB;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
 }
 
-a, p, li{
-    font-family: 'Manrope';
+header {
+    padding: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: #FFFFFF;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin-left: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
     color: #1F2937;
 }
 
-a{
+ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #4B5563;
+}
+
+p {
+    color: #6B7280;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #9CA3AF;
+}
+
+a {
+    color: inherit;
     text-decoration: none;
 }
 
-/* HEADER */
+nav {
+    background: #FFFFFF;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
 
-.header{
-    display:flex;
+nav a {
+    margin: 0 1rem;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+nav:hover{
+}
+
+@media (max-width: 768px) {
+    .hero {
     flex-direction: column;
-    margin-top: 4.88vh;
-    height: 29.3vh;
-    width: 100%;
-    align-items: center;
-}
-
-.hd_block_consult_spec{
-    display: flex;
-    height: 19.5vh;
-    width: 93.05vw;
-    margin-left: 3.472vw;
-    margin-right: 3.472vw;
-    background-color: #9CA3AF;
-    background-size: cover;
-    background-position: center;
-    border-radius: 100px;
-}
-
-.hd_consult_spec{
-    display: flex;
-    gap: 23.61vw;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4.88vh;
-    margin-left: 3.47vw;
-    margin-right: 3.47vw;
-    margin-bottom: 4.88vh;
-    width: calc(100% - 3.47vw);
-    height: auto;
-    position: relative;
-}
-
-.hd_specialization, .hd_consult{
-    display: flex;
-    width: 31.25vw;
-    height: 100%;
-    background-color: #DBEAFE;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-}
-
-.text_spec{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    height:100%;
-    width: 100%;
-    border-radius: 30px;
-}
-
-.text_consult{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    height:100%;
-    width: 100%;
-    border-radius: 30px;
-}
-
-.text_consult:hover{
-    color: white;
-}
-
-.hd_consult:hover{
-    background-color: #3B82F6;
-    color: white;
-    text-decoration: underline;
-}
-
-.hd_Menu{
-    display: flex;
-    flex-direction: row;
-    width: 86.11vw;
-    height: 4.88vh;
-    margin-top: 4.88vh;
-    border-radius: 50px;
-    background-color: #9CA3AF;
-    align-items: center;
-}
-
-.hd_ref_name{
-    width: 28.703vw;
-    height: 4.88vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
-}
-
-.name_button{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
-}
-
-.name_button:hover{
-    border-radius: 50px;
-    background-color: #DBEAFE;
-    text-decoration: underline;
-}
-
-.hd_about_menu{
-    width: 28.703vw;
-    height: 4.88vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
-}
-
-.about_button{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
-}
-
-.about_button:hover{
-    border-radius: 50px;
-    background-color: #DBEAFE;
-    text-decoration: underline;
-}
-
-/* MAIN */
-
-.index_main{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 4.88vh;
-    justify-self: center;
-    align-items: center;
-}
-
-.photo_info{
-    display:flex;
-    margin-bottom: 4.88vh;
-    flex-direction: row;
-    width: 86.11vw;
-    height: 450px;
-    align-items: center;
-    gap: 50px;
-    justify-content: center;
-}
-
-.photo{
-    height:450px;
-    width: 450px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(assets/mm.jpg);
-}
-
-.list_gen_info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.list_gen_text{
-    list-style-type: disc;
-    padding-left: 20px;
-    line-height: 1.8;
-    font-size: 2rem;
-}
-
-.list_consult_ref{
-    line-height: 1.8;
-    font-size: 2rem;
-}
-
-.list_consult_ref:hover{
-    background-color: #F9FAFB;
-    border-radius: 15px;
-    text-decoration: underline;
-    padding: 10px;
-}
-
-.photo_text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 51.388vw;
-    height: 450px;
-    border-radius: 50px;
-    background-color: #9CA3AF;
-}
-
-
-.main_aboutme{
-    display: flex;
-    width: 86.11vw;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    background-color: #9CA3AF;
-}
-
-
-
-/* ADAPTATION */
-
-@media (min-width: 2560px) {
-    .menu_name{
-        font-size: 30px;
     }
-
-    .text_consult{
-        font-size: 40px;
+    .hero-text {
+    margin-left: 0;
     }
-
-    .text_spec{
-        font-size: 40px;
-    }
-
-    .photo_info{
-        gap: 6vw;
-    }
-    .photo_text{
-        height: 500px;
-    }
-    
-    .photo{
-        height: 500px;
-        width: 500px;
-    }
-    
-    .list_gen_text, .list_consult_ref{
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 1620px) {
-    .list_gen_text, .list_consult_ref{
-        font-size: 25px;
-    }
-    
-}
-
-
-@media (max-width: 1440px) {
-    .list_gen_text, .list_consult_ref{
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .photo_info{
-        height: 350px;
-    }
-
-    .photo{
-        height:350px;
-        width: 350px;
-    }
-
-    .photo_text{
-        width: 481.77px;
-        height: 350px;
-    }
-    .list_gen_text, .list_consult_ref{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 970px) {
-    .name_button, .about_button{
-        font-size: 15px;
-    }
-    
-}
-
-@media (max-width: 768px){
-
-    .name_button{
-        font-size: 15px;
-    }
-
-    .about_button{
-        font-size: 15px;
-    }
-
-    .list_gen_info{
-        display: flex;
-        margin: 20px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .photo_info{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
-
-    .photo_text{
-        height: auto;
-    }
-
-}
-
-@media (max-width: 711px){
-    .hd_block_consult_spec{
-        border-radius: 50px;
-    }
-
-    .hd_consult_spec{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 2vh;
-        height: 80%;
-    }
-
-    .hd_specialization, .hd_consult{
-        display: flex;
-        width: 86.11vw;
-        height: 70%;
-    }
-
-    .text_spec, .text_consult{
-        font-size: 20px;
-    }
-
-    .photo_info{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
-
-    .hd_ref_name{
-        width: 50%;
-    }
-
-    .name_button{
-        font-size: 15px;
-    }
-
-    .hd_about_menu{
-        width: 50%;
-    }
-
-    .about_button{
-        font-size: 15px;
-    }
-    .photo_text{
-        width: auto; 
-        height: auto;
-    }
-    .list_gen_text, .list_consult_ref{
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 425px) {
-    .name_button, .about_button{
-        font-size: 14px;
-    }
-    .hd_specialization, .hd_consult{
-        width: 80vw;
-    }
-    
-}
-
-@media (max-width: 360px) {
-    .photo{
-        height: 200px;
-        width: 200px;
-    }
-    
 }
